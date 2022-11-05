@@ -33,7 +33,7 @@ global tableoptions "bf(%15.2gc) sfmt(%15.2gc) se label noisily noeqlines nonumb
 esttab regression_fe using Reg-Table-DnD.rtf, replace 
 
 * second method 
-reg lunghospitalizations i.year##i.vapingban i.stateid  
+reg lunghospitalizations i.year##vapingban i.stateid  
 * Store regression
 eststo regression_two
 * Output your results into a publication-quality table. 
